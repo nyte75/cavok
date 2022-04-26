@@ -1,13 +1,13 @@
 import { v4 as uuid } from 'uuid';
 
-export const products = [
+export const models = [
   {
     id: uuid(),
     createdAt: '27/03/2022',
     description: 'Summary map identifies general areas of drought and labels them by intensity.',
     media: '/static/images/products/product_1.png',
     background: '/static/images/products/drought.jpg',
-    title: 'Drought Monitoring',
+    title: 'ACCESS-S v2',
     totalDownloads: '13',
     update: '2'
   },
@@ -17,7 +17,7 @@ export const products = [
     description: 'Liklihood of precipitaion amounts over the coming months.',
     media: '/static/images/products/product_2.png',
     background: '/static/images/products/rainAnom.png',
-    title: 'Rainfall Outlook',
+    title: 'Scopic',
     totalDownloads: '34',
     update: '3'
   },
@@ -27,7 +27,7 @@ export const products = [
     description: 'Annual, Seasonal and weekly summary of precipitaion',
     media: '/static/images/products/product_3.png',
     background: '/static/images/products/rainSummary.png',
-    title: 'Rainfall Summary',
+    title: 'Satelite',
     totalDownloads: '23',
     update: '2'
   },
@@ -37,7 +37,7 @@ export const products = [
     description: 'Annual, Seasonal and weekly summary of temperatures',
     media: '/static/images/products/product_4.png',
     background: '/static/images/products/temperature.png',
-    title: 'Temprature Summary',
+    title: 'Local',
     totalDownloads: '406',
     update: '2'
   }

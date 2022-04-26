@@ -1,15 +1,15 @@
 import Head from 'next/head';
 import { Box, Container, Grid, Pagination } from '@mui/material';
-import { products } from '../__mocks__/products';
-import { ProductListToolbar } from '../components/product/product-list-toolbar';
+import { models } from '../__mocks__/models';
+import { ModelsListToolbar } from '../components/modelz/model-list-toolbar';
 import { ProductCard } from '../components/product/product-card';
 import { DashboardLayout } from '../components/dashboard-layout';
 
-const Products = () => (
+const Models = () => (
   <>
     <Head>
       <title>
-        Products | cliBoard
+        Models | cliBoard
       </title>
     </Head>
     <Box
@@ -20,21 +20,21 @@ const Products = () => (
       }}
     >
       <Container maxWidth={false}>
-        <ProductListToolbar />
+        <ModelsListToolbar />
         <Box sx={{ pt: 3 }}>
           <Grid
             container
             spacing={3}
           >
-            {products.map((product) => (
+            {models.map((model) => (
               <Grid
                 item
-                key={product.id}
+                key={model.id}
                 lg={4}
                 md={6}
                 xs={12}
               >
-                <ProductCard product={product} />
+                <ProductCard product={model} />
               </Grid>
             ))}
           </Grid>
@@ -57,10 +57,10 @@ const Products = () => (
   </>
 );
 
-Products.getLayout = (page) => (
+Models.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default Products;
+export default Models;

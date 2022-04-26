@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Avatar, Box, Card, CardContent, Divider, Grid, Typography } from '@mui/material';
+import { Avatar, Box, Card, CardContent, CardMedia, Divider, Grid, Typography } from '@mui/material';
 import { Clock as ClockIcon } from '../../icons/clock';
 import { Download as DownloadIcon } from '../../icons/download';
 
@@ -12,7 +12,14 @@ export const ProductCard = ({ product, ...rest }) => (
     }}
     {...rest}
   >
+    <CardMedia
+       component="img"
+       height="150"
+       image={product.background}
+       alt="product"
+    />
     <CardContent>
+      {/*
       <Box
         sx={{
           display: 'flex',
@@ -20,12 +27,7 @@ export const ProductCard = ({ product, ...rest }) => (
           pb: 3
         }}
       >
-        <Avatar
-          alt="Product"
-          src={product.media}
-          variant="square"
-        />
-      </Box>
+      </Box> */}
       <Typography
         align="center"
         color="textPrimary"
@@ -64,7 +66,7 @@ export const ProductCard = ({ product, ...rest }) => (
             sx={{ pl: 1 }}
             variant="body2"
           >
-            Updated 2hr ago
+            Updated {product.update} ago
           </Typography>
         </Grid>
         <Grid
