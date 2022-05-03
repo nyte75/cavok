@@ -16,7 +16,7 @@ import { NavItem } from './nav-item';
 
 const items = [
   {
-    href: '/',
+    href: '/noticeboard',
     icon: (<ChartBarIcon fontSize="small" />),
     title: 'Noticeboard'
   },
@@ -36,7 +36,7 @@ const items = [
     title: 'Models'
   },
   {
-    href: '/products',
+    href: '/projects',
     icon: (<ShoppingBagIcon fontSize="small" />),
     title: 'Projects'
   },
