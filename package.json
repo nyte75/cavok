@@ -1,6 +1,6 @@
 {
-  "name": "material-kit-react",
-  "author": "Devias IO",
+  "name": "clibaord-material-kit-react",
+  "author": "nathan kima yuave",
   "licence": "MIT",
   "version": "2.0.0",
   "private": false,
@@ -13,6 +13,7 @@
     "lint-fix": "next lint --fix"
   },
   "dependencies": {
+    "@date-io/date-fns": "^2.13.1",
     "@emotion/cache": "^11.5.0",
     "@emotion/react": "^11.5.0",
     "@emotion/server": "^11.4.0",
