@@ -50,7 +50,7 @@ import {
           </Button>
         </Box>
       </Box>
-      <Box sx={{ mt: 3 }}>
+      {/*<Box sx={{ mt: 3 }}>
         <Card>
           <CardContent>
             <Box sx={{ maxWidth: 500 }}>
@@ -74,7 +74,7 @@ import {
             </Box>
           </CardContent>
         </Card>
-      </Box>
+      </Box>*/}
     </Box>
   );
   
