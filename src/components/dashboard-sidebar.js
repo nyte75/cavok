@@ -3,7 +3,9 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Box, Button, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
-import { MenuOpen } from '@mui/icons-material';
+import ArticleIcon from '@mui/icons-material/Article';
+import TaskIcon from '@mui/icons-material/Task';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
 import { Cog as CogIcon } from '../icons/cog';
 import { Lock as LockIcon } from '../icons/lock';
@@ -17,7 +19,7 @@ import { NavItem } from './nav-item';
 const items = [
   {
     href: '/noticeboard',
-    icon: (<ChartBarIcon fontSize="small" />),
+    icon: (<ArticleIcon fontSize="small" />),
     title: 'Noticeboard'
   },
   {
@@ -42,7 +44,7 @@ const items = [
   },
   {
     href: '/customers',
-    icon: (<UsersIcon fontSize="small" />),
+    icon: (<CalendarTodayIcon fontSize="small" />),
     title: 'Calender'
   },
   {
@@ -59,11 +61,6 @@ const items = [
     href: '/calender',
     icon: (<UsersIcon fontSize="small" />),
     title: 'Calender'
-  },
-  {
-    href: '/account',
-    icon: (<UserIcon fontSize="small" />),
-    title: 'Account'
   },
   {
     href: '/settings',
