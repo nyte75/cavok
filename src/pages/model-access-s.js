@@ -21,7 +21,7 @@ const Dashboard = () => (
       component="main"
       sx={{
         flexGrow: 1,
-        py: 8
+        py: 1
       }}
     >
       <Container maxWidth={false}>
