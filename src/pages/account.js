@@ -8,7 +8,7 @@ const Account = () => (
   <>
     <Head>
       <title>
-        Account | CliBoard
+        Profile | CliBoard
       </title>
     </Head>
     <Box
