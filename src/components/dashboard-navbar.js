@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 import { AppBar, Avatar, Badge, Box, IconButton, Toolbar, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import BasicMenu from "./nav/profile";
 import { Bell as BellIcon } from '../icons/bell';
+import { Cog as CogIcon } from '../icons/cog';
 import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 import { Users as UsersIcon } from '../icons/users';
 
@@ -53,8 +55,8 @@ export const DashboardNavbar = (props) => {
           </Tooltip>
           <Box sx={{ flexGrow: 1 }} />
           <Tooltip title="Contacts">
-            <IconButton sx={{ ml: 1 }}>
-              <UsersIcon fontSize="small" />
+            <IconButton sx={{ ml: 1 }} href='/settings'>
+              <CogIcon fontSize="small" />
             </IconButton>
           </Tooltip>
           <Tooltip title="Notifications">
@@ -68,16 +70,16 @@ export const DashboardNavbar = (props) => {
               </Badge>
             </IconButton>
           </Tooltip>
-          <Avatar
-            sx={{
-              height: 40,
-              width: 40,
-              ml: 1
-            }}
-            src="/static/images/avatars/avatar_1.png"
+          {/*
+          <BasicMenu />
+          */ }
+          <IconButton 
+            href="/account"
           >
-            <UserCircleIcon fontSize="small" />
-          </Avatar>
+            <Avatar>
+              <UserCircleIcon />
+            </Avatar>
+          </IconButton>
         </Toolbar>
       </DashboardNavbarRoot>
     </>

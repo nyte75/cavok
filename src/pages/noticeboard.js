@@ -4,7 +4,7 @@ import { MainNotice } from '../components/noticeboard/newnotice';
 import { LatestOrders } from '../components/dashboard/latest-orders';
 import { LatestProducts } from '../components/dashboard/latest-products';
 import { Sales } from '../components/dashboard/sales';
-import { CustomCalendar } from '../components/noticeboard/calender';
+import { CustomDay } from '../components/noticeboard/calender';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 const Dashboard = () => (
@@ -18,7 +18,7 @@ const Dashboard = () => (
       component="main"
       sx={{
         flexGrow: 1,
-        py: 8
+        py: 1
       }}
     >
       <Container maxWidth={false}>
@@ -51,7 +51,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <CustomCalendar sx={{ height: '100%' }} />
+            <CustomDay sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item
